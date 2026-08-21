@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ابدأ متجرك | متجري</title>
+
+<meta name="description"
+content="اطلب إنشاء متجرك الإلكتروني من متجري في الرياض.">
+
+<meta name="theme-color" content="#0b1020">
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Arial,Tahoma,sans-serif;
+  background:#f5f7fb;
+  color:#111827;
+  line-height:1.8;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.container{
+  width:min(700px,92%);
+  margin:auto;
+}
+
+/* HEADER */
+
+header{
+  background:#0b1020;
+  color:#fff;
+  padding:18px 0;
+}
+
+.header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-size:28px;
+  font-weight:900;
+}
+
+.logo span{
+  color:#38bdf8;
+}
+
+.back{
+  color:#cbd5e1;
+  font-size:14px;
+}
+
+/* PAGE */
+
+.page{
+  padding:55px 0 80px;
+}
+
+.title{
+  text-align:center;
+  margin-bottom:35px;
+}
+
+.title h1{
+  font-size:38px;
+  margin-bottom:10px;
+}
+
+.title p{
+  color:#64748b;
+}
+
+/* FORM */
+
+.form-card{
+  background:#fff;
+  border:1px solid #e5e7eb;
+  border-radius:22px;
+  padding:30px;
+  box-shadow:0 15px 45px rgba(15,23,42,.07);
+}
+
+.form-group{
+  margin-bottom:20px;
+}
+
+label{
+  display:block;
+  font-weight:800;
+  margin-bottom:8px;
+}
+
+input,
+select,
+textarea{
+  width:100%;
+  border:1px solid #dbe1ea;
+  background:#fff;
+  border-radius:12px;
+  padding:14px;
+  font-family:inherit;
+  font-size:15px;
+  outline:none;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+  border-color:#38bdf8;
+  box-shadow:0 0 0 3px rgba(56,189,248,.12);
+}
+
+textarea{
+  min-height:120px;
+  resize:vertical;
+}
+
+.required{
+  color:#ef4444;
+}
+
+/* OPTIONS */
+
+.options{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+
+.option{
+  border:1px solid #dbe1ea;
+  border-radius:12px;
+  padding:15px;
+  cursor:pointer;
+  transition:.2s;
+}
+
+.option:hover{
+  border-color:#38bdf8;
+  background:#f0faff;
+}
+
+.option input{
+  width:auto;
+  margin-left:8px;
+}
+
+.option-title{
+  font-weight:800;
+}
+
+.option-text{
+  color:#64748b;
+  font-size:13px;
+}
+
+/* BUTTON */
+
+.submit{
+  width:100%;
+  border:0;
+  border-radius:13px;
+  background:#22c55e;
+  color:#fff;
+  padding:16px;
+  font-family:inherit;
+  font-size:17px;
+  font-weight:900;
+  cursor:pointer;
+  margin-top:10px;
+}
+
+.submit:hover{
+  background:#16a34a;
+}
+
+.note{
+  text-align:center;
+  color:#64748b;
+  font-size:13px;
+  margin-top:15px;
+}
+
+/* FOOTER */
+
+footer{
+  background:#070c17;
+  color:#94a3b8;
+  text-align:center;
+  padding:25px;
+  font-size:13px;
+}
+
+footer strong{
+  color:#fff;
+}
+
+/* MOBILE */
+
+@media(max-width:560px){
+
+  .title h1{
+    font-size:31px;
+  }
+
+  .form-card{
+    padding:22px;
+  }
+
+  .options{
+    grid-template-columns:1fr;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+  <div class="container header">
+
+    <a href="index.html" class="logo">
+      متجري<span>.</span>
+    </a>
+
+    <a href="index.html" class="back">
+      ← العودة للموقع
+    </a>
+
+  </div>
+
+</header>
+
+
+<main class="page">
+
+  <div class="container">
+
+    <div class="title">
+
+      <h1>
+        ابدأ متجرك الآن
+      </h1>
+
+      <p>
+        املأ البيانات التالية وسنتواصل معك عبر WhatsApp.
+      </p>
+
+    </div>
+
+
+    <form
+      class="form-card"
+      id="orderForm">
+
+      <!-- NAME -->
+
+      <div class="form-group">
+
+        <label>
+          اسمك <span class="required">*</span>
+        </label>
+
+        <input
+          type="text"
+          id="name"
+          placeholder="اكتب اسمك"
+          required>
+
+      </div>
+
+
+      <!-- BUSINESS -->
+
+      <div class="form-group">
+
+        <label>
+          اسم المشروع
+        </label>
+
+        <input
+          type="text"
+          id="business"
+          placeholder="مثال: متجر العطور">
+
+      </div>
+
+
+      <!-- PHONE -->
+
+      <div class="form-group">
+
+        <label>
+          رقم WhatsApp <span class="required">*</span>
+        </label>
+
+        <input
+          type="tel"
+          id="phone"
+          placeholder="05xxxxxxxx"
+          required>
+
+      </div>
+
+
+      <!-- STORE TYPE -->
+
+      <div class="form-group">
+
+        <label>
+          نوع المتجر
+        </label>
+
+        <select id="storeType">
+
+          <option value="">
+            اختر نوع المتجر
+          </option>
+
+          <option>
+            ملابس وأزياء
+          </option>
+
+          <option>
+            عطور وتجميل
+          </option>
+
+          <option>
+            إلكترونيات
+          </option>
+
+          <option>
+            مطعم أو مقهى
+          </option>
+
+          <option>
+            خدمات
+          </option>
+
+          <option>
+            منتجات رقمية
+          </option>
+
+          <option>
+            متجر عام
+          </option>
+
+          <option>
+            أخرى
+          </option>
+
+        </select>
+
+      </div>
+
+
+      <!-- PLATFORM -->
+
+      <div class="form-group">
+
+        <label>
+          المنصة المفضلة
+        </label>
+
+        <div class="options">
+
+          <label class="option">
+
+            <input
+              type="radio"
+              name="platform"
+              value="سلة">
+
+            <span class="option-title">
+              سلة
+            </span>
+
+            <span class="option-text">
+              منصة سلة
+            </span>
+
+          </label>
+
+
+          <label class="option">
+
+            <input
+              type="radio"
+              name="platform"
+              value="زد">
+
+            <span class="option-title">
+              زد
+            </span>
+
+            <span class="option-text">
+              منصة زد
+            </span>
+
+          </label>
+
+
+          <label class="option">
+
+            <input
+              type="radio"
+              name="platform"
+              value="Shopify">
+
+            <span class="option-title">
+              Shopify
+            </span>
+
+            <span class="option-text">
+              متجر Shopify
+            </span>
+
+          </label>
+
+
+          <label class="option">
+
+            <input
+              type="radio"
+              name="platform"
+              value="لا أعرف">
+
+            <span class="option-title">
+              لا أعرف
+            </span>
+
+            <span class="option-text">
+              ساعدني في الاختيار
+            </span>
+
+          </label>
+
+        </div>
+
+      </div>
+
+
+      <!-- SERVICES -->
+
+      <div class="form-group">
+
+        <label>
+          الخدمات المطلوبة
+        </label>
+
+        <div class="options">
+
+          <label class="option">
+
+            <input
+              type="checkbox"
+              name="service"
+              value="تصميم المتجر">
+
+            تصميم المتجر
+
+          </label>
+
+
+          <label class="option">
+
+            <input
+              type="checkbox"
+              name="service"
+              value="إضافة المنتجات">
+
+            إضافة المنتجات
+
+          </label>
+
+
+          <label class="option">
+
+            <input
+              type="checkbox"
+              name="service"
+              value="الدفع والشحن">
+
+            الدفع والشحن
+
+          </label>
+
+
+          <label class="option">
+
+            <input
+              type="checkbox"
+              name="service"
+              value="تهيئة Google">
+
+            تهيئة Google
+
+          </label>
+
+        </div>
+
+      </div>
+
+
+      <!-- MESSAGE -->
+
+      <div class="form-group">
+
+        <label>
+          تفاصيل إضافية
+        </label>
+
+        <textarea
+          id="message"
+          placeholder="اكتب أي تفاصيل أو طلبات إضافية..."></textarea>
+
+      </div>
+
+
+      <button
+        type="submit"
+        class="submit">
+
+        💬 إرسال الطلب عبر WhatsApp
+
+      </button>
+
+
+      <p class="note">
+        سيتم فتح WhatsApp وإرسال تفاصيل طلبك مباشرة.
+      </p>
+
+    </form>
+
+  </div>
+
+</main>
+
+
+<footer>
+
+  © 2026
+  <strong>
+    متجري | MATJARI
+  </strong>
+  — جميع الحقوق محفوظة
+
+</footer>
+
+
+<script>
+
+document.getElementById("orderForm").addEventListener("submit",function(e){
+
+  e.preventDefault();
+
+  const name =
+    document.getElementById("name").value.trim();
+
+  const business =
+    document.getElementById("business").value.trim();
+
+  const phone =
+    document.getElementById("phone").value.trim();
+
+  const storeType =
+    document.getElementById("storeType").value;
+
+  const platform =
+    document.querySelector(
+      'input[name="platform"]:checked'
+    );
+
+  const services =
+    Array.from(
+      document.querySelectorAll(
+        'input[name="service"]:checked'
+      )
+    )
+    .map(item => item.value)
+    .join("، ");
+
+  const message =
+    document.getElementById("message").value.trim();
+
+
+  const selectedPlatform =
+    platform ? platform.value : "لم يتم التحديد";
+
+
+  const text =
+`مرحبًا متجري 👋
+
+أرغب في إنشاء متجر إلكتروني.
+
+👤 الاسم:
+${name}
+
+🏪 اسم المشروع:
+${business || "لم يتم التحديد"}
+
+📱 رقم WhatsApp:
+${phone}
+
+🛍️ نوع المتجر:
+${storeType || "لم يتم التحديد"}
+
+🌐 المنصة المفضلة:
+${selectedPlatform}
+
+🔧 الخدمات المطلوبة:
+${services || "لم يتم التحديد"}
+
+📝 تفاصيل إضافية:
+${message || "لا توجد"}
+
+أرغب في معرفة التفاصيل والأسعار.`;
+
+  const whatsappNumber =
+    "966501271478";
+
+  const url =
+    "https://wa.me/" +
+    whatsappNumber +
+    "?text=" +
+    encodeURIComponent(text);
+
+  window.open(url,"_blank");
+
+});
+
+</script>
+
+</body>
+</html>
